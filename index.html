@@ -7,6 +7,7 @@
         <title>Hola soy Gabriel Murillo</title>
         <meta name="viewport" content="width=device-width, inicial scale=1.0"> 
         <link rel="icon" type="image/png" href="images/favicon.PNG">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <header>
@@ -29,6 +30,7 @@
             </nav>
             </div>
         </header>
+        <main>
         <section>
             <h1>Hola¡ Soy <strong>Gabriel Murillo</strong>
                  <br>desarrolador<strong></strong> web</strong>
@@ -65,12 +67,49 @@
             </article>
             </section>
         <section>
-            <form action="/suscripción/">
-                <h3>¿Creamos algo juntos?</h3>
-                <input type="email" placeholder="Dejame tu email" id="email">
+            <form action="">
+                <label for="email">
+                  <span>¿Creamos algo juntos?</span>
+                  <input type="email" placeholder="Dejame tu email" id="email" required>
+                </label>
+                <h3>¿En que momento?</h3>
+                <label for="hora"></label>
+                <span>Hora</span>
+                <input type="time" id="hora" name="hora" required>
+                <label for="dia">
+                <span>Día</span>
+                <input type="date" id="dia" name="dia" required>
+                </label>
+                <label for="semana"></label>
+                <span>Semana</span>
+                <input type="week" id="semana" name="semana" required>
+                <label for="mes">
+                    <span>Mes</span>
+                    <input type="month" id="mes" name="mes" required>
+                </label>
+                <h3>¿Quien eres?</h3>
+                <label for="nombre">
+                     <span>name</span>
+                     <input type="text" required autocomplete="name">
+                    </label>
+                <label for="pais">
+                    <span>país</span>
+                    <input type="text" autocomplete="country" required>
+                </label>
+                <label for="codigo postal">
+                    <span>codigo postal</span>
+                    <input type="number" autocomplete="postal-code" required>
+                </label>
+                <h3>¿Que quieres hacer?</h3>
+                <select name="cosas" id="cosas" required>
+                    <option value="Paginas web">Paginas web</option>
+                    <option value="Landing pages">Landing pages</option>
+                    <option value="Blogs">blogs</option>
+                </select>
                 <button>Enviar</button>
             </form>
         </section>
+    </main>
         <footer>footer</footer>
     </body>
 </html>
